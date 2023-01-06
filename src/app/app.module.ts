@@ -16,6 +16,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { DataTablesModule } from "angular-datatables";
 import { ApiService } from './services/api.service';
+import { AsignacionComponent } from './pages/asignacion/asignacion.component';
 
 
 
@@ -25,7 +26,8 @@ import { ApiService } from './services/api.service';
     LoginComponent,
     NavbarComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    AsignacionComponent
   ],
   imports: [
     BrowserModule,

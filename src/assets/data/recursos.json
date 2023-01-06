@@ -3,10 +3,54 @@
         "id": 1,
         "nombreCompleto": "Luis Alonso Guzman Espinoza",
         "ocupacionActual": "Etapa de liberacion",
+        "dedicadoDiario": 20,
+        "desde": "Mon Jan 01 2023 11:31:52 GMT-0600 (Central Standard Time)",
+        "hasta": "Fri Jan 06 2023 11:31:52 GMT-0600 (Central Standard Time)",
+        "retraso": false,
         "estadoOcupado": 70,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsum, impedit nulla molestias eius optio cupiditate quidem consequatur facere quia consequuntur repellat. Placeat ipsum odio eveniet id explicabo officiis consequuntur!",
         "cliente": {
             "id": 1,
             "nombre": "AFP CONFIA"
+        },
+        "contrato": {
+            "id": 1,
+            "nombre": "Pool de horas"
+        },
+        "marca": {
+            "id": 1,
+            "nombre": "Redhat"
+        },
+        "producto": {
+            "id": 1,
+            "nombre": "Openshift"
+        },
+        "area": {
+            "id": 1,
+            "nombre": "Middleware"
+        },
+        "habilidad": {
+            "id": 1,
+            "nombre": "Frontend"
+        },
+        "pais": {
+            "id": 1,
+            "nombre": "El Salvador"
+        }
+    },
+    {
+        "id": 2,
+        "nombreCompleto": "Hector Manuel Miranda",
+        "ocupacionActual": "Etapa de desarrollo",
+        "desde": "Mon Jan 01 2023 11:31:52 GMT-0600 (Central Standard Time)",
+        "hasta": "Fri Jan 06 2023 11:31:52 GMT-0600 (Central Standard Time)",
+        "retraso": true,
+        "dedicadoDiario": 50,
+        "estadoOcupado": 20,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsum, impedit nulla molestias eius optio cupiditate quidem consequatur facere quia consequuntur repellat. Placeat ipsum odio eveniet id explicabo officiis consequuntur!",
+        "cliente": {
+            "id": 1,
+            "nombre": "SEFIN"
         },
         "contrato": {
             "id": 1,
