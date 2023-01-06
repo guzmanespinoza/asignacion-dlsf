@@ -6,13 +6,11 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { IConfig } from 'ngx-mask';
-import { provideEnvironmentNgxMask, provideNgxMask } from 'ngx-mask/lib/ngx-mask.providers';
-import { NgxMaskDirective } from 'ngx-mask/lib/ngx-mask.directive';
-import { NgxMaskPipe } from 'ngx-mask/lib/ngx-mask.pipe';
-const maskConfig: Partial<IConfig> = {
-  validation: false,
-};
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TextMaskModule } from 'angular2-text-mask';
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -28,11 +26,13 @@ const maskConfig: Partial<IConfig> = {
     }),
     NgxPaginationModule,
     NgxSpinnerModule,
-    NgxMaskDirective,
-    NgxMaskPipe
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    TextMaskModule 
   ],
   providers: [
-    provideNgxMask(maskConfig),
+
   ],
   bootstrap: [AppComponent]
 })
