@@ -14,8 +14,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NgSelectModule } from '@ng-select/ng-select';
-
 import { DataTablesModule } from "angular-datatables";
+
 
 
 @NgModule({
