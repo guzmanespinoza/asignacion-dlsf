@@ -27,11 +27,19 @@ export class DashboardComponent {
 
   ngOnInit(): void {
 
-    this.api.getDashboard().subscribe(response => {
+    /* this.api.getDashboard().subscribe(response => {
       this.data = response;
-    })
+    }) */
     this.dtOptions = {
-      
+      ajax: (dataTablesParameters: any, callback:any) => {
+        this.api.getDashboard().subscribe(resp => {
+          callback({
+            recordsTotal: resp.recordsTotal,
+            recordsFiltered: resp.recordsFiltered,
+            data: resp             // <-- see here
+          });
+        })
+      },
       columns: [
         {
           title: 'Id',
@@ -49,10 +57,7 @@ export class DashboardComponent {
           title: 'Estado',
           data: 'estadoOcupado'
         },
-        {
-          title: 'Detalle',
-          data: 'Area-Marca-Producto'
-        },
+      
         {
           title: 'Cliente',
           data: 'cliente.nombre'
@@ -70,9 +75,7 @@ export class DashboardComponent {
       // Declare the use of the extension in the dom parameter
       dom: 'Bfrtip',
       // Configure the buttons
-      "columnDefs": [
-        { "visible": false },
-      ],
+   
       buttons: [
         
         'colvis',
