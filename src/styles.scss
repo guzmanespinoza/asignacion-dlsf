@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+.btn-danger {
+    color: #fff;
+    background-color: #ed1c24 !important;
+    border-color: #c61017 !important;
+}
+
+.btn-danger :hover,
+.btn-danger :active,
+.btn-danger :focus {
+    color: #fff;
+    background-color: #ed1c24 !important;
+    border-color: #c61017 !important;
+}
+
+.bg-danger {
+    background-color: #ed1c24 !important;
+    border-color: #c61017 !important;
+}
+
+.title-sing {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.info-sing {
+    color: #a1a1a1;
+    font-size: 14px;
+}
+
+
+
+input {
+    height: 40px;
+}
+
+
+
+
+.marca {
+
+    border-radius: 30px;
+
+    background-color: #f4f4f4;
+
+    strong {
+        background-color: #ed1c24 !important;
+        border-color: #c61017 !important;
+        padding: 2px;
+        border-radius: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #fff;
+    }
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+input {
+    border-radius: 0px !important;
+}
+
+
+.title-sing {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.info-sing {
+    color: #a1a1a1;
+    font-size: 14px;
+}
+
+.collapse-head {
+    cursor: pointer !important;
+}

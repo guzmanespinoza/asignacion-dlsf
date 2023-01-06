@@ -1,5 +1,6 @@
 import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,15 +9,26 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TextMaskModule } from 'angular2-text-mask';
+import { LoginComponent } from './pages/login/login.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+
+import { DataTablesModule } from "angular-datatables";
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    NavbarComponent,
+    FooterComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
@@ -29,7 +41,8 @@ import { TextMaskModule } from 'angular2-text-mask';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    TextMaskModule 
+    NgSelectModule,
+    DataTablesModule
   ],
   providers: [
 
