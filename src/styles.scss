@@ -78,3 +78,11 @@ input {
 .collapse-head {
     cursor: pointer !important;
 }
+
+.active{
+    background-color: #ed1c24 !important;
+    background: #ed1c24 !important;
+    color: #fff !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr="#f0f0f0", EndColorStr="#dadada");
+    box-shadow: inset 1px 1px 3px #666;
+}

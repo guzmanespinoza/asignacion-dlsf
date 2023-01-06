@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "nombreCompleto": "Luis Alonso Guzman Espinoza",
+        "ocupacionActual": "Etapa de liberacion",
+        "estadoOcupado": 70,
+        "cliente": {
+            "id": 1,
+            "nombre": "AFP CONFIA"
+        },
+        "contrato": {
+            "id": 1,
+            "nombre": "Pool de horas"
+        },
+        "marca": {
+            "id": 1,
+            "nombre": "Redhat"
+        },
+        "producto": {
+            "id": 1,
+            "nombre": "Openshift"
+        },
+        "area": {
+            "id": 1,
+            "nombre": "Middleware"
+        },
+        "habilidad": {
+            "id": 1,
+            "nombre": "Frontend"
+        },
+        "pais": {
+            "id": 1,
+            "nombre": "El Salvador"
+        }
+    }
+]

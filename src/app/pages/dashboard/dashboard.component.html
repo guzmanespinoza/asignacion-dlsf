@@ -2,8 +2,9 @@
 
 <main class="container">
     <div class="row">
-        <div class="col-lg-12">
+      <!--   <div class="col-lg-12">
             <h3>Asignaciones</h3>
+            <p>{{data|json}}</p>
         </div>
         <div class="col-lg-12">
             <div class="accordion" id="accordionExample">
@@ -70,44 +71,40 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
         <div class="col-lg-12">
-            <table datatable [dtOptions]="dtOptions" class="row-border hover">
+            <table datatable  [dtOptions]="dtOptions"  class="row-border hover">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>First name</th>
-                        <th>Last name</th>
+                        <th *ngFor="let d of dtOptions.columns">{{d.title}}</th>
+                      
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Foo</td>
-                        <td>Bar</td>
+                    <tr *ngFor="let d of data">
+                        <td>{{d.id}}</td>
+                        <td>{{d.nombreCompleto}}</td>
+                        <td>
+                            {{d.ocupacionActual}}
+                            
+                        </td>
+                        <td>{{d.estadoOcupado}}</td>
+                        <td>
+                         
+                            {{d.area.nombre}}
+                            <br>{{d.marca.nombre}} <br>{{d.producto.nombre}}
+                            <br>
+                           
+                        </td>
+                        <td>
+                            {{d.cliente.nombre}}
+                    
+                        </td>
+                        <td>{{d.contrato.nombre}}</td>
+                        <td>{{d.pais.nombre}}</td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Someone</td>
-                        <td>Youknow</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Iamout</td>
-                        <td>Ofinspiration</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Yoda</td>
-                        <td>Skywalker</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Patrick</td>
-                        <td>Dupont</td>
-                    </tr>
-                  
+                   
                 </tbody>
             </table>
 
