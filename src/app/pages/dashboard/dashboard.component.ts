@@ -17,24 +17,7 @@ export class DashboardComponent {
 
  
 
-  constructor() {}
-
-  @Output()
-  emitter = new Subject<IDemoNgComponentEventType>();
-
-  @Input()
-  data = {};
-
-  ngOnInit(): void {}
-
-  onAction1() {
-    this.emitter.next({
-      cmd: "action1",
-      data: this.data,
-    });
-  }
-
-  ngOnDestroy() {
-    this.emitter.unsubscribe();
+  ngOnInit(): void {
+   
   }
 }
